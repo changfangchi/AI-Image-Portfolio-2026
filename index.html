@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Creation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f1eb;
+            color: #302c29;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #38332f;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin: 0;
+        }
+
+        header p {
+            color: #ded5ca;
+        }
+
+        main {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 28px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #c9a987;
+            padding-bottom: 10px;
+        }
+
+        .image-placeholder {
+            background: #eee9e2;
+            padding: 35px 15px;
+            text-align: center;
+            border-radius: 10px;
+            color: #74695e;
+        }
+
+        .workflow img,
+        .comparison img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .prompt {
+            background: #f5f1eb;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #74695e;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    
+    img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+}</style>
+</head>
+<body>
+
+<header>
+    <h1>AI Image Creation</h1>
+    <p>From Original Photography to AI Art</p>
+</header>
+
+<main>
+    <section>
+        <h2>01. Original Photo 原始照片</h2>
+        <img src="images/original.jpg" alt="Original Photo">
+    </section>
+
+    <section>
+        <h2>02. AI Generated Image AI 生成圖片</h2>
+        <img src="images/generated.jpg" alt="AI Generated Image">
+    </section>
+
+    <section class="workflow">
+    <h2>03. Workflow 完整工作流</h2>
+    <p>以下記錄從上傳原圖、輸入提示詞到生成圖片的過程。</p>
+
+    <div class="workflow-images">
+        <div>
+            <p>Step 1：上傳原始照片與輸入提示詞</p>
+            <img src="workflow/step1.png" alt="Step 1">
+        </div>
+
+        <div>
+            <p>Step 2：生成圖片</p>
+            <img src="workflow/step2.png" alt="Step 2">
+        </div>
+    </div>
+</section>
+
+    <section>
+        <h2>04. Prompts 提示詞</h2>
+
+        <h3>Positive Prompt 正向提示詞</h3>
+        <div class="prompt">
+            Use the uploaded photo as the main reference. Transform it into a cinematic photograph with natural lighting, soft shadows, realistic textures, rich colors, and a professional film still aesthetic. Preserve the original subject's identity, facial features, pose, and overall composition. High detail, realistic photography.
+        </div>
+
+        <h3>Negative Prompt 反向提示詞</h3>
+        <div class="prompt">
+            This tool does not provide a separate negative prompt field. The desired result was guided through the positive prompt.
+        </div>
+    </section>
+
+    <section>
+        <h2>05. Reflection 個人心得</h2>
+        <p>
+    這次作業讓我學習到如何利用 AI 生成圖片，並透過提示詞控制圖片的風格與呈現效果。
+    在製作的過程中，我發現提示詞的描述會影響生成結果，因此需要清楚表達自己想要的畫面。
+    透過將原始照片與 AI 生成圖片放在一起比較，我能更清楚觀察兩者在光線、色彩與整體氛圍上的差異。
+    這次的經驗讓我了解到，AI 可以作為影像創作的輔助工具，但最後的成果仍需要透過自己的想法與判斷來調整。
+</p>
+    </section>
+</main>
+
+<footer>
+    AI Image Creation Portfolio
+</footer>
+
+</body>
+</html>
